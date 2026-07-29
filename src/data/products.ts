@@ -30,7 +30,7 @@ export const PRODUCTS: Product[] = [
   rating: 5.0,
   reviewsCount: 34,
   image: keychainImg,
-  galleryImages: [keychainImg, keychain1Img, keychain2Img, keychain3Img, keychain4Img],
+  // galleryImages: [keychainImg, keychain1Img, keychain2Img, keychain3Img, keychain4Img],
   description: 'Cute handmade crochet honey bee keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
   isBestSeller: true,
   inStock: true,
@@ -45,7 +45,99 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
-     id: 'p2',
+  id: 'p2',
+  name: 'Handmade Crochet Octopus Keychain',
+  category: 'keychains',
+  price: 300,
+  originalPrice: 400,
+  rating: 5.0,
+  reviewsCount: 34,
+  image: keychain1Img,
+  // galleryImages: [keychainImg, keychain1Img, keychain2Img, keychain3Img, keychain4Img],
+  description: 'Cute handmade crochet octopus keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
+  isBestSeller: true,
+  inStock: true,
+  colors: ['Yellow & Black', 'Pastel Yellow', 'Golden Yellow'],
+  yarnType: '100% Premium Milk Cotton Yarn',
+  dimensions: 'Approx. 7cm x 6cm',
+  leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium milk cotton yarn',
+      'Strong metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+   {
+  id: 'p3',
+  name: 'Handmade Crochet Snail Keychain',
+  category: 'keychains',
+  price: 300,
+  originalPrice: 400,
+  rating: 5.0,
+  reviewsCount: 34,
+  image: keychain2Img,
+  // galleryImages: [keychainImg, keychain1Img, keychain2Img, keychain3Img, keychain4Img],
+  description: 'Cute handmade crochet snail keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
+  isBestSeller: true,
+  inStock: true,
+  colors: ['Yellow & Black', 'Pastel Yellow', 'Golden Yellow'],
+  yarnType: '100% Premium Milk Cotton Yarn',
+  dimensions: 'Approx. 7cm x 6cm',
+  leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium milk cotton yarn',
+      'Strong metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+   {
+  id: 'p4',
+  name: 'Handmade Crochet Rose Keychain',
+  category: 'keychains',
+  price: 300,
+  originalPrice: 400,
+  rating: 5.0,
+  reviewsCount: 34,
+  image: keychain3Img,
+  // galleryImages: [keychainImg, keychain1Img, keychain2Img, keychain3Img, keychain4Img],
+  description: 'Cute handmade crochet rose keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
+  isBestSeller: true,
+  inStock: true,
+  colors: ['Yellow & Black', 'Pastel Yellow', 'Golden Yellow'],
+  yarnType: '100% Premium Milk Cotton Yarn',
+  dimensions: 'Approx. 7cm x 6cm',
+  leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium milk cotton yarn',
+      'Strong metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+   {
+  id: 'p5',
+  name: 'Handmade Crochet Ice-Cream Keychain',
+  category: 'keychains',
+  price: 300,
+  originalPrice: 400,
+  rating: 5.0,
+  reviewsCount: 34,
+  image: keychain4Img,
+  // galleryImages: [keychainImg, keychain1Img, keychain2Img, keychain3Img, keychain4Img],
+  description: 'Cute handmade crochet ice-cream keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
+  isBestSeller: true,
+  inStock: true,
+  colors: ['Yellow & Black', 'Pastel Yellow', 'Golden Yellow'],
+  yarnType: '100% Premium Milk Cotton Yarn',
+  dimensions: 'Approx. 7cm x 6cm',
+  leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium milk cotton yarn',
+      'Strong metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+  {
+     id: 'p6',
   name: 'Handmade Crochet Rose Flower Gajray',
   category: 'gajray',
   price: 1200,
@@ -53,7 +145,7 @@ export const PRODUCTS: Product[] = [
   rating: 4.9,
   reviewsCount: 28,
   image: gajrayImg,
-  galleryImages: [gajrayImg, gajray3Img, gajray2Img],
+  // galleryImages: [gajrayImg, gajray3Img, gajray2Img],
   description: 'Elegant handmade crochet rose flower gajray designed to add a timeless floral touch to your hairstyle. Soft, lightweight, reusable, and perfect for weddings, Eid, mehndi, and special occasions.',
   isBestSeller: true,
   isNew: true,
@@ -69,7 +161,55 @@ export const PRODUCTS: Product[] = [
     ]
   },
   {
-    id: 'p3',
+     id: 'p7',
+  name: 'Handmade Crochet Genda  Flower Gajray',
+  category: 'gajray',
+  price: 1200,
+  originalPrice: 2000,
+  rating: 4.9,
+  reviewsCount: 28,
+  image: gajray3Img,
+  // galleryImages: [gajrayImg, gajray3Img, gajray2Img],
+  description: 'Elegant handmade crochet genda flower gajray designed to add a timeless floral touch to your hairstyle. Soft, lightweight, reusable, and perfect for weddings, Eid, mehndi, and special occasions.',
+  isBestSeller: true,
+  isNew: true,
+  inStock: true,
+  colors: ['Red', 'Pink', 'White'],
+  yarnType: 'Premium Soft Cotton Yarn',
+  dimensions: 'Standard Size',
+  leadTime: '1 Day',
+    details: [
+      'Handmade crochet genda flowers',
+      'Reusable and long-lasting',
+      'Comfortable to wear for all occasions'
+    ]
+  },
+  {
+     id: 'p9',
+  name: 'Handmade Crochet Red Flower & White Flower Gajray',
+  category: 'gajray',
+  price: 1200,
+  originalPrice: 2000,
+  rating: 4.9,
+  reviewsCount: 28,
+  image: gajray2Img,
+  // galleryImages: [gajrayImg, gajray3Img, gajray2Img],
+  description: 'Elegant handmade crochet Red Flower & White Flower gajray designed to add a timeless floral touch to your hairstyle. Soft, lightweight, reusable, and perfect for weddings, Eid, mehndi, and special occasions.',
+  isBestSeller: true,
+  isNew: true,
+  inStock: true,
+  colors: ['Red', 'Pink', 'White'],
+  yarnType: 'Premium Soft Cotton Yarn',
+  dimensions: 'Standard Size',
+  leadTime: '1 Day',
+    details: [
+      'Handmade crochet red and white flowers',
+      'Reusable and long-lasting',
+      'Comfortable to wear for all occasions'
+    ]
+  },
+  {
+    id: 'p10',
   name: 'Lip Balm Holder Crochet',
   category: 'plushies',
   price: 300,
@@ -92,7 +232,7 @@ export const PRODUCTS: Product[] = [
   ]
   },
    {
-  id: 'p4',
+  id: 'p11',
   name: 'Donut Crochet Plushie',
   category: 'plushies',
   price: 300,
@@ -137,7 +277,7 @@ export const PRODUCTS: Product[] = [
   //   ]
   // },
   {
-  id: 'p5',
+  id: 'p12',
   name: 'Crochet Flower Bouquet',
   category: 'flowers',
   price: 1200,
@@ -161,6 +301,7 @@ export const PRODUCTS: Product[] = [
   ]
 },
   // {
+
   //   id: 'p6',
   //   name: 'Lavender Bouquet in Ceramic Pot',
   //   category: 'flowers',

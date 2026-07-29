@@ -4,6 +4,7 @@ export type Category =
   | 'clips'
   | 'flowers'
   | 'plushies'
+  | 'gajray'
   | 'bookmarks'
   | 'custom';
 
