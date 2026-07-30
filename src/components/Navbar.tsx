@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { 
-  ShoppingBag, 
-  Heart, 
-  Search, 
-  Menu, 
-  X, 
-  Instagram, 
-  MessageCircle, 
-  Sparkles 
+import {
+  ShoppingBag,
+  Heart,
+  Search,
+  Menu,
+  X,
+  Instagram,
+  MessageCircle,
+  Sparkles
 } from 'lucide-react';
 import { INSTAGRAM_URL, WHATSAPP_DISPLAY, WHATSAPP_NUMBER } from '../data/products';
 
@@ -59,32 +59,35 @@ export const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-amber-50/90 backdrop-blur-md border-b border-rose-100 transition-all">
+    <header className="sticky top-0 left-0 w-full z-50 bg-amber-50/90 backdrop-blur-md border-b border-rose-100">
       {/* Top Announcement Bar */}
-      <div className="bg-gradient-to-r from-rose-400 via-pink-400 to-amber-300 text-white text-xs font-medium py-1.5 px-4 text-center flex items-center justify-center gap-2 shadow-sm">
+      <div className="bg-gradient-to-r from-rose-400 via-pink-400 to-amber-300 text-white text-[10px] sm:text-xs font-medium py-2 px-2 sm:px-4 text-center flex items-center justify-center gap-1 sm:gap-2 shadow-sm">
         <Sparkles className="w-3.5 h-3.5 animate-pulse" />
-        <span>🌸 100% Handmade Crochet Goods • Custom Orders & Color Choices Available via WhatsApp ({WHATSAPP_DISPLAY})</span>
-        <a 
+        <span className="line-clamp-2 sm:line-clamp-none">
+          🌸 Handmade Crochet • Custom Orders via WhatsApp
+        </span>
+        <a
           href={INSTAGRAM_URL}
-          target="_blank" 
+          target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-1 underline underline-offset-2 hover:opacity-80 transition ml-2"
         >
-          <Instagram className="w-3 h-3"/> @crochet_art_1014
+          <Instagram className="w-3 h-3" /> @crochet_art_1014
         </a>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="flex items-center justify-between h-16 sm:h-20">
+
           {/* Logo & Brand */}
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('home')}>
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-rose-200 to-amber-100 flex items-center justify-center shadow-inner border border-rose-200/60 transform hover:scale-105 transition">
-              <span className="text-2xl" role="img" aria-label="crochet yarn ball">🧶</span>
+          <div className="flex items-center gap-2 sm:gap-3 cursor-pointer min-w-0" onClick={() => handleNavClick('home')}>
+            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-rose-200 to-amber-100 flex items-center justify-center shadow-inner border border-rose-200/60 transform hover:scale-105 transition">
+              <span className="text-lg sm:text-xl lg:text-2xl" role="img" aria-label="crochet yarn ball">🧶</span>
             </div>
-            <div>
-              <span className="font-serif text-2xl font-bold tracking-tight text-stone-800 flex items-center gap-1">
-                Crochet Art <span className="text-rose-500 font-sans font-light text-xl">1014</span>
+            <div className="min-w-0">
+             <span className="font-serif text-lg sm:text-xl lg:text-2xl font-bold tracking-tight text-stone-800 truncate">
+                Crochet Art
+                {/* <span className="text-rose-500 font-sans font-light text-xl">1014</span> */}
               </span>
               <p className="text-[11px] text-stone-500 tracking-wider font-medium -mt-1 uppercase">
                 Handmade Crochet & Gifts
@@ -100,11 +103,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <button
                   key={link.id}
                   onClick={() => handleNavClick(link.id)}
-                  className={`px-3.5 py-2 rounded-full text-sm font-medium transition-all ${
-                    isActive
+                  className={`px-3.5 py-2 rounded-full text-sm font-medium transition-all ${isActive
                       ? 'bg-rose-100/80 text-rose-800 shadow-sm font-semibold'
                       : 'text-stone-700 hover:text-rose-600 hover:bg-rose-50/60'
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </button>
@@ -113,16 +115,16 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           {/* Actions & Buttons */}
-          <div className="flex items-center gap-2 sm:gap-3">
-            
+          <div className="flex items-center gap-1 sm:gap-2 lg:gap-3">
+
             {/* Search Input toggle */}
             <div className="relative">
               {showSearchInput ? (
-                <div className="flex items-center bg-white border border-rose-200 rounded-full px-3 py-1.5 shadow-sm w-44 sm:w-60">
+                <div className="flex items-center bg-white border border-rose-200 rounded-full px-3 py-1.5 shadow-sm w-[140px] xs:w-[170px] sm:w-60 max-w-full">
                   <Search className="w-4 h-4 text-stone-400 mr-2 flex-shrink-0" />
                   <input
                     type="text"
-                    placeholder="Search keychains, flowers..."
+                    placeholder="Search..."
                     value={searchQuery}
                     onChange={(e) => {
                       setSearchQuery(e.target.value);
@@ -131,7 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     autoFocus
                     className="w-full text-xs text-stone-700 bg-transparent focus:outline-none"
                   />
-                  <button 
+                  <button
                     onClick={() => {
                       setShowSearchInput(false);
                       setSearchQuery('');
@@ -158,10 +160,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Wishlist Icon */}
             <button
               onClick={onOpenWishlist}
-              className="relative p-2.5 rounded-full text-stone-600 hover:text-rose-600 hover:bg-rose-100/50 transition"
+              className="hidden sm:flex relative p-2.5 rounded-full text-stone-600 hover:text-rose-600 hover:bg-rose-100/50 transition"
               title="Saved Items"
             >
-              <Heart className="w-5 h-5" />
+              <Heart className="w-4 h-4 sm:w-5 sm:h-5" />
               {wishlistCount > 0 && (
                 <span className="absolute top-1 right-1 bg-rose-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
                   {wishlistCount}
@@ -175,7 +177,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="relative p-2.5 rounded-full text-stone-700 hover:text-rose-600 hover:bg-rose-100/50 transition"
               title="Shopping Cart"
             >
-              <ShoppingBag className="w-5 h-5" />
+              <ShoppingBag className="w-4 h-4 sm:w-5 sm:h-5" />
               {cartCount > 0 && (
                 <span className="absolute top-1 right-1 bg-emerald-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center animate-bounce">
                   {cartCount}
@@ -198,7 +200,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="p-2 rounded-xl lg:hidden text-stone-700 hover:bg-rose-100/50 transition"
               aria-label="Toggle menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
 
           </div>
@@ -214,11 +216,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
-                className={`w-full text-left px-4 py-2.5 rounded-xl text-sm font-medium transition ${
-                  activeTab === link.id
+                className={`w-full text-left px-4 py-2.5 rounded-xl text-sm font-medium transition ${activeTab === link.id
                     ? 'bg-rose-200/70 text-rose-900 font-bold'
                     : 'text-stone-700 hover:bg-rose-100/50'
-                }`}
+                  }`}
               >
                 {link.label}
               </button>
@@ -228,7 +229,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="pt-3 border-t border-rose-200/70 flex flex-col gap-2.5">
             <button
               onClick={handleWhatsAppClick}
-              className="w-full flex items-center justify-center gap-2 bg-emerald-600 text-white text-sm font-semibold py-3 rounded-2xl shadow-sm hover:bg-emerald-700 transition"
+              className="w-full flex items-center justify-center gap-2 bg-emerald-600 text-white text-sm font-semibold py-4 rounded-2xl shadow-sm hover:bg-emerald-700 transition"
             >
               <MessageCircle className="w-5 h-5" />
               <span>Chat on WhatsApp ({WHATSAPP_DISPLAY})</span>
@@ -238,7 +239,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-semibold py-3 rounded-2xl shadow-sm hover:opacity-95 transition"
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-semibold py-4 rounded-2xl shadow-sm hover:opacity-95 transition"
             >
               <Instagram className="w-5 h-5" />
               <span>Follow on Instagram (@crochet_art_1014)</span>
