@@ -524,5 +524,5 @@ export const INSTAGRAM_POSTS = [
 ];
 
 export const INSTAGRAM_URL = "https://www.instagram.com/crochet_art_1014?igsh=dngyaG5qOTl0M2Vs";
-export const WHATSAPP_NUMBER = "923340211881";
-export const WHATSAPP_DISPLAY = "03340211881";
+export const WHATSAPP_NUMBER = "923272464001";
+export const WHATSAPP_DISPLAY = "03272464001";

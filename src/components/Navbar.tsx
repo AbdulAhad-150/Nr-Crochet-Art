@@ -67,10 +67,10 @@ export const Navbar: React.FC<NavbarProps> = ({
         <a 
           href={INSTAGRAM_URL}
           target="_blank" 
-          rel="noopener noreferrer" 
+          rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-1 underline underline-offset-2 hover:opacity-80 transition ml-2"
         >
-          <Instagram className="w-3 h-3" /> @crochet_art_1014
+          <Instagram className="w-3 h-3"/> @crochet_art_1014
         </a>
       </div>
 
