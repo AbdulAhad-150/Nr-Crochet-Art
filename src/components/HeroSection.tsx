@@ -150,6 +150,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               { id: 'flowers', label: '🌸 Flowers & Pots', bg: 'bg-amber-100/70 hover:bg-amber-200/80 text-amber-900' },
               { id: 'plushies', label: '🧸 Amigurumi Plushies', bg: 'bg-emerald-100/70 hover:bg-emerald-200/80 text-emerald-900' },
               { id: 'bookmarks', label: '📖 Leaf Bookmarks', bg: 'bg-sky-100/70 hover:bg-sky-200/80 text-sky-900' },
+              { id: 'BagHangingCharms', label: '🎀 Bag Hanging Charms', bg: 'bg-sky-100/70 hover:bg-sky-200/80 text-sky-900' },
+              { id: 'ScarfPins', label: '🧷 Scarf Pins', bg: 'bg-indigo-100/70 hover:bg-indigo-200/80 text-indigo-900' },
               { id: 'custom', label: '✨ Custom Letter Gifts', bg: 'bg-pink-100/70 hover:bg-pink-200/80 text-pink-900' },
             ].map((cat) => (
               <button

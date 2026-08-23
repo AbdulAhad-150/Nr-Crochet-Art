@@ -131,6 +131,17 @@ export const Footer: React.FC<FooterProps> = ({ onSelectNav, onSelectCategory })
                   📖 Leaf & Rose Bookmarks
                 </button>
               </li>
+              
+              <li>
+                <button onClick={() => onSelectCategory('BagHangingCharms')} className="hover:text-rose-300 transition">
+                  🎀 Bag Hanging Charms
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onSelectCategory('ScarfPins')} className="hover:text-rose-300 transition">
+                  🧷 Scarf Pins
+                </button>
+              </li>
               <li>
                 <button onClick={() => onSelectCategory('custom')} className="hover:text-rose-300 transition">
                   ✨ Custom Monogram Gifts

@@ -138,6 +138,8 @@ export default function App() {
     { id: 'flowers', label: 'Flowers & Pots', icon: '🌻' },
     { id: 'plushies', label: 'Amigurumi Plushies', icon: '🧸' },
     { id: 'bookmarks', label: 'Bookmarks', icon: '📖' },
+    { id: 'BagHangingCharms', label: 'Bag Hanging Charms', icon: '🎀' },
+    { id: 'ScarfPins', label: 'Scarf Pins', icon: '🧷' },
     { id: 'custom', label: 'Custom Gifts', icon: '✨' },
   ];
 
@@ -287,7 +289,26 @@ export default function App() {
               </p>
             </div>
 
-            {/* Category Tab Selector */}
+{/* Category Tab Selector */}
+<div className="sticky top-16 z-30 bg-stone-50/95 backdrop-blur-md py-3 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0">
+  <div className="flex items-center sm:justify-center gap-2 overflow-x-auto scrollbar-none no-scrollbar pb-2 pt-1 touch-pan-x">
+    {categories.map((cat) => (
+      <button
+        key={cat.id}
+        onClick={() => setSelectedCategory(cat.id as Category)}
+        className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition shrink-0 flex items-center gap-1.5 ${
+          selectedCategory === cat.id
+            ? 'bg-rose-500 text-white shadow-md'
+            : 'bg-white text-stone-700 border border-stone-200 hover:border-rose-300'
+        }`}
+      >
+        <span>{cat.icon}</span>
+        <span>{cat.label}</span>
+      </button>
+    ))}
+  </div>
+</div>
+            {/* Category Tab Selector
             <div className="flex items-center justify-center gap-2 overflow-x-auto pb-4 mb-8">
               {categories.map((cat) => (
                 <button
@@ -303,7 +324,7 @@ export default function App() {
                   <span>{cat.label}</span>
                 </button>
               ))}
-            </div>
+            </div> */}
 
             {/* Products Grid */}
             {filteredProducts.length === 0 ? (

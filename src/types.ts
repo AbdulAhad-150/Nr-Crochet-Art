@@ -1,10 +1,11 @@
 export type Category = 
   | 'all'
   | 'keychains'
+  | 'BagHangingCharms'
+  | 'ScarfPins'
   | 'clips'
   | 'flowers'
   | 'plushies'
-  | 'gajray'
   | 'bookmarks'
   | 'custom';
 

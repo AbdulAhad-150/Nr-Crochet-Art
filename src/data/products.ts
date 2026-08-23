@@ -1,22 +1,61 @@
 import { Product, Review, FAQItem } from '../types';
-
+// Custom images
 import gajrayImg from '../assets/images/gajray.jpeg';
 import gajray2Img from '../assets/images/handbracellet.jpeg';
 import gajray3Img from '../assets/images/gajray3.jpeg';
-
+// keychain images
 import keychainImg from '../assets/images/honeybee_keychain.jpeg';
 import keychain1Img from '../assets/images/octapus.jpeg';
 import keychain2Img from '../assets/images/snail_keychain.jpeg';
 import keychain3Img from '../assets/images/rose.jpeg';
 import keychain4Img from '../assets/images/icecream_keychain.jpeg';
-
+// plushie images
 import libBalmImg from '../assets/images/lip_balm_holder.jpeg';
 
 // import plushieImg from '../assets/images/crochet_plushies_bee_1785257295839.jpg';
+
 import flowersImg from '../assets/images/flowers.jpeg';
 import donutImg from '../assets/images/dounat.jpeg';
 
-import butterflyImg from '../assets/images/crochet_butterfly_clips_1785257309303.jpg';
+// hair clip images
+
+import hairClip1 from '../assets/images/hairclip_blue.jpeg';
+import hairClip2 from '../assets/images/hairclip_red.jpeg';
+import hairClip3 from '../assets/images/hairclip_pink.jpeg';
+import hairClip4 from '../assets/images/hairclip_Yellow.jpeg';
+
+// Scarf Pins images
+import scarfPin1 from '../assets/images/scarf_pin_pink.jpeg';
+import scarfPin2 from '../assets/images/scarf_pin_red.jpeg';
+import scarfPin3 from '../assets/images/scarf_pin2.jpeg';
+import scarfPin4 from '../assets/images/scarf_pin1.jpeg';
+
+// Spiderman keychain tranding image
+import spidermanKeychainImg from '../assets/images/spiderman_keychain.jpeg';
+
+// bouquet keychain images
+import bouquetImg1 from '../assets/images/bouquet_keychain1.webp';
+import bouquetImg2 from '../assets/images/bouquet_keychain2.webp';
+import bouquetImg3 from '../assets/images/bouquet_keychain3.webp';
+
+// strawberry keychain image
+import strawberryKeychainImg from '../assets/images/strawberry_keychain.jfif';
+
+// book mark images
+import bookmarkImg1 from '../assets/images/bookmark.jfif';
+
+//cute chicken keychain image
+import cuteChickenKeychainImg from '../assets/images/cutie_chick.webp'; 
+
+// Bag hanging charm image
+import bagHangingCharmImg from '../assets/images/bag_charm1.webp';
+import bagHangingCharm2Img from '../assets/images/bag_charm2.webp';
+import bagHangingCharm3Img from '../assets/images/bag_charm3.webp';
+import bagHangingCharm4Img from '../assets/images/bag_charm4.webp';
+import bagHangingCharm5Img from '../assets/images/bag_charm5.webp';
+import bagHangingCharm6Img from '../assets/images/bag_charm6.webp';
+
+
 
 export const HERO_IMAGE = gajrayImg;
 
@@ -34,7 +73,7 @@ export const PRODUCTS: Product[] = [
   description: 'Cute handmade crochet honey bee keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
   isBestSeller: true,
   inStock: true,
-  colors: ['Yellow & Black', 'Pastel Yellow', 'Golden Yellow'],
+  colors: ['Yellow & Black'],
   yarnType: '100% Premium Milk Cotton Yarn',
   dimensions: 'Approx. 7cm x 6cm',
   leadTime: '1-2 Days',
@@ -57,7 +96,7 @@ export const PRODUCTS: Product[] = [
   description: 'Cute handmade crochet octopus keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
   isBestSeller: true,
   inStock: true,
-  colors: ['Yellow & Black', 'Pastel Yellow', 'Golden Yellow'],
+  colors: ['Ice Blue'],
   yarnType: '100% Premium Milk Cotton Yarn',
   dimensions: 'Approx. 7cm x 6cm',
   leadTime: '1-2 Days',
@@ -80,7 +119,7 @@ export const PRODUCTS: Product[] = [
   description: 'Cute handmade crochet snail keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
   isBestSeller: true,
   inStock: true,
-  colors: ['Yellow & Black', 'Pastel Yellow', 'Golden Yellow'],
+  colors: ['Brown & White','Pink & White'],
   yarnType: '100% Premium Milk Cotton Yarn',
   dimensions: 'Approx. 7cm x 6cm',
   leadTime: '1-2 Days',
@@ -103,7 +142,7 @@ export const PRODUCTS: Product[] = [
   description: 'Cute handmade crochet rose keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
   isBestSeller: true,
   inStock: true,
-  colors: ['Yellow & Black', 'Pastel Yellow', 'Golden Yellow'],
+  colors: ['Light Pink'],
   yarnType: '100% Premium Milk Cotton Yarn',
   dimensions: 'Approx. 7cm x 6cm',
   leadTime: '1-2 Days',
@@ -126,7 +165,7 @@ export const PRODUCTS: Product[] = [
   description: 'Cute handmade crochet ice-cream keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
   isBestSeller: true,
   inStock: true,
-  colors: ['Yellow & Black', 'Pastel Yellow', 'Golden Yellow'],
+  colors: ['Soft light pink & Warm golden brown'],
   yarnType: '100% Premium Milk Cotton Yarn',
   dimensions: 'Approx. 7cm x 6cm',
   leadTime: '1-2 Days',
@@ -139,7 +178,7 @@ export const PRODUCTS: Product[] = [
   {
      id: 'p6',
   name: 'Handmade Crochet Rose Flower Gajray',
-  category: 'gajray',
+  category: 'custom',
   price: 1200,
   originalPrice: 2000,
   rating: 4.9,
@@ -150,7 +189,7 @@ export const PRODUCTS: Product[] = [
   isBestSeller: true,
   isNew: true,
   inStock: true,
-  colors: ['Red', 'Pink', 'White'],
+  colors: ['Red & White'],
   yarnType: 'Premium Soft Cotton Yarn',
   dimensions: 'Standard Size',
   leadTime: '1 Day',
@@ -162,8 +201,8 @@ export const PRODUCTS: Product[] = [
   },
   {
      id: 'p7',
-  name: 'Handmade Crochet Genda  Flower Gajray',
-  category: 'gajray',
+  name: 'Handmade Crochet Genda Flower Gajray',
+  category: 'custom',
   price: 1200,
   originalPrice: 2000,
   rating: 4.9,
@@ -174,7 +213,7 @@ export const PRODUCTS: Product[] = [
   isBestSeller: true,
   isNew: true,
   inStock: true,
-  colors: ['Red', 'Pink', 'White'],
+  colors: ['Yellow & White'],
   yarnType: 'Premium Soft Cotton Yarn',
   dimensions: 'Standard Size',
   leadTime: '1 Day',
@@ -187,7 +226,7 @@ export const PRODUCTS: Product[] = [
   {
      id: 'p9',
   name: 'Handmade Crochet Red Flower & White Flower Gajray',
-  category: 'gajray',
+  category: 'custom',
   price: 1200,
   originalPrice: 2000,
   rating: 4.9,
@@ -198,7 +237,7 @@ export const PRODUCTS: Product[] = [
   isBestSeller: true,
   isNew: true,
   inStock: true,
-  colors: ['Red', 'Pink', 'White'],
+  colors: ['Red & White'],
   yarnType: 'Premium Soft Cotton Yarn',
   dimensions: 'Standard Size',
   leadTime: '1 Day',
@@ -221,7 +260,7 @@ export const PRODUCTS: Product[] = [
   description: 'Handmade crochet lip balm holder that keeps your favorite lip balm secure and easy to carry. Attach it to your handbag, backpack, or keys for quick access anytime.',
   isBestSeller: true,
   inStock: true,
-  colors: ['Pink', 'Purple', 'Beige'],
+  colors: ['Red & Green'],
   yarnType: '100% Premium Milk Cotton Yarn',
   dimensions: 'Fits Standard Lip Balm',
   leadTime: '2 Days',
@@ -244,7 +283,7 @@ export const PRODUCTS: Product[] = [
   description: "Adorable handmade crochet donut plushie made with soft premium yarn. A cute decorative piece that's perfect for gifting, room décor, or adding charm to your collection.",
   isBestSeller: true,
   inStock: true,
-  colors: ['Pink', 'Chocolate', 'Pastel Blue'],
+  colors: ['Pink'],
   yarnType: 'Super Soft Plush Cotton Yarn',
   dimensions: 'Approx. 10cm x 10cm',
   leadTime: '2 Days',
@@ -254,28 +293,7 @@ export const PRODUCTS: Product[] = [
     'Perfect as a gift or room decoration'
   ]
 },
-  // {
-  //   id: 'p5',
-  //   name: 'Crochet Strawberry Charm Keychain',
-  //   category: 'keychains',
-  //   price: 380,
-  //   originalPrice: 500,
-  //   rating: 4.8,
-  //   reviewsCount: 19,
-  //   image: 'https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?auto=format&fit=crop&w=800&q=80',
-  //   description: 'Juicy cute crochet strawberry keychain complete with little embroidered white seeds, green leafy top, and gold key ring.',
-  //   isBestSeller: false,
-  //   inStock: true,
-  //   colors: ['Classic Red', 'Pastel Pink', 'Wild Berry Purple'],
-  //   yarnType: '4-Ply Milk Cotton',
-  //   dimensions: 'Length: 6cm',
-  //   leadTime: '1 Day',
-  //   details: [
-  //     'Durable gold lobster clasp key ring',
-  //     'Lightweight and scratch-free on car keys',
-  //     'Hand-stitched detail'
-  //   ]
-  // },
+  
   {
   id: 'p12',
   name: 'Crochet Flower Bouquet',
@@ -290,7 +308,7 @@ export const PRODUCTS: Product[] = [
   isBestSeller: false,
   isNew: true,
   inStock: true,
-  colors: ['Red', 'Pink', 'White', 'Yellow'],
+  colors: ['Multicolored'],
   yarnType: 'Premium Milk Cotton Yarn',
   dimensions: 'Approx. 30cm Height',
   leadTime: '1-2 Days',
@@ -300,122 +318,512 @@ export const PRODUCTS: Product[] = [
     'Ideal for gifting and home decoration'
   ]
 },
-  // {
+  {
 
-  //   id: 'p6',
-  //   name: 'Lavender Bouquet in Ceramic Pot',
-  //   category: 'flowers',
-  //   price: 1200,
-  //   originalPrice: 1500,
-  //   rating: 5.0,
-  //   reviewsCount: 22,
-  //   image: keychainImg,
-  //   // galleryImages: [keychainImg, gajrayImg],
-  //   description: 'Arrangement of 5 detailed crochet lavender sprigs sitting gracefully in a hand-poured mini ceramic pot. Delicate and elegant home decor.',
-  //   isBestSeller: true,
-  //   inStock: true,
-  //   colors: ['Royal Purple', 'Soft Lavender', 'Pastel Lilac'],
-  //   yarnType: '100% Milk Cotton',
-  //   dimensions: 'Height: 18cm',
-  //   leadTime: '2-3 Days',
-  //   details: [
-  //     '5 individually crafted sprigs',
-  //     'Includes decorative faux soil and ceramic container',
-  //     'Dust-resistant treated yarn'
-  //   ]
-  // },
-  // {
-  //   id: 'p7',
-  //   name: 'Cute Froggy Amigurumi Keychain',
-  //   category: 'keychains',
-  //   price: 420,
-  //   originalPrice: 550,
-  //   rating: 4.9,
-  //   reviewsCount: 31,
-  //   image: plushieImg,
-  //   description: 'Round chubby green frog plush keychain with big round eyes and rosy pink cheeks. A pocket companion guaranteed to make you smile.',
-  //   isBestSeller: true,
-  //   inStock: true,
-  //   colors: ['Forest Green', 'Matcha Frog', 'Pastel Lime'],
-  //   yarnType: 'Soft Cotton Yarn',
-  //   dimensions: 'Height: 6.5cm',
-  //   leadTime: '1 Day',
-  //   details: [
-  //     'Heavy-duty alloy key ring',
-  //     'Stuffing with high resilience fiberfill',
-  //     'Includes small bell charm option'
-  //   ]
-  // },
-  // {
-  //   id: 'p8',
-  //   name: 'Vintage Rose Flower Bookmark',
-  //   category: 'bookmarks',
-  //   price: 390,
-  //   originalPrice: 500,
-  //   rating: 4.8,
-  //   reviewsCount: 14,
-  //   image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80',
-  //   description: 'Handcrafted blooming red rose at the end of a leafy green crochet stem. Marks your page in timeless romantic style.',
-  //   isBestSeller: false,
-  //   inStock: true,
-  //   colors: ['Deep Red', 'Dusty Rose', 'Cream White'],
-  //   yarnType: 'Fine Mercerized Cotton',
-  //   dimensions: 'Length: 30cm',
-  //   leadTime: '1-2 Days',
-  //   details: [
-  //     '3D layered rose petals',
-  //     'Does not stretch or slip out of books',
-  //     'Lovely gift item for readers'
-  //   ]
-  // },
-  // {
-  //   id: 'p9',
-  //   name: 'Custom Initial Letter Keychain',
-  //   category: 'custom',
-  //   price: 550,
-  //   originalPrice: 700,
-  //   rating: 5.0,
-  //   reviewsCount: 56,
-  //   image: gajrayImg,
-  //   // galleryImages: [gajrayImg, keychainImg],
-  //   description: 'Personalized 3D crochet letter keychain tailored in your choice of letter A-Z and color scheme. Decorated with a mini flower accent.',
-  //   isBestSeller: true,
-  //   inStock: true,
-  //   colors: ['Custom Palette', 'Pastel Rainbow', 'Monochrome Earth'],
-  //   yarnType: 'Milk Cotton Yarn',
-  //   dimensions: 'Letter height: 7cm',
-  //   leadTime: '2 Days',
-  //   details: [
-  //     'Choose any Alphabet letter A-Z',
-  //     'Select 2-3 favorite yarn colors',
-  //     'Comes packaged in a custom gift box with ribbon'
-  //   ]
-  // },
-  // {
-  //   id: 'p10',
-  //   name: 'Octopus Mood Plushie (Reversible)',
-  //   category: 'plushies',
-  //   price: 1100,
-  //   originalPrice: 1400,
-  //   rating: 4.9,
-  //   reviewsCount: 27,
-  //   image: plushieImg,
-  //   description: 'Handmade double-sided crochet octopus plushie! Flip inside out to switch between happy smiling face and grumpy cute face.',
-  //   isBestSeller: false,
-  //   isNew: true,
-  //   inStock: true,
-  //   colors: ['Pink & Blue Flip', 'Purple & Mint Flip', 'Yellow & Coral Flip'],
-  //   yarnType: 'Chunky Velvet Soft Yarn',
-  //   dimensions: '14cm diameter',
-  //   leadTime: '2-3 Days',
-  //   details: [
-  //     'Two mood faces in one plushie',
-  //     'Super velvety touch feeling',
-  //     'Seamless flipped design'
-  //   ]
-  // }
+    id: 'p13',
+    name: 'Handmade Butterfly Crochet Clips',
+    category: 'clips',
+    price: 300,
+    originalPrice: 400,
+    rating: 5.0,
+    reviewsCount: 22,
+    image: hairClip1,
+    // galleryImages: [hairClip1, hairClip3, hairClip4],
+    description: 'Arrangement of 5 detailed crochet lavender sprigs sitting gracefully in a hand-poured mini ceramic pot. Delicate and elegant home decor.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Blue'],
+    yarnType: '100% Milk Cotton',
+    dimensions: 'Height: 18cm',
+    leadTime: '2-3 Days',
+    details: [
+      '5 individually crafted sprigs',
+      'Includes decorative faux soil and ceramic container',
+      'Dust-resistant treated yarn'
+    ]
+  },
+  {
+
+    id: 'p14',
+    name: 'Handmade Butterfly Crochet Clips',
+    category: 'clips',
+    price: 300,
+    originalPrice: 400,
+    rating: 5.0,
+    reviewsCount: 22,
+    image: hairClip2,
+    // galleryImages: [hairClip1, hairClip3, hairClip4],
+    description: 'Arrangement of 5 detailed crochet lavender sprigs sitting gracefully in a hand-poured mini ceramic pot. Delicate and elegant home decor.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Red'],
+    yarnType: '100% Milk Cotton',
+    dimensions: 'Height: 18cm',
+    leadTime: '2-3 Days',
+    details: [
+      '5 individually crafted sprigs',
+      'Includes decorative faux soil and ceramic container',
+      'Dust-resistant treated yarn'
+    ]
+  },
+  {
+
+    id: 'p15',
+    name: 'Handmade Butterfly Crochet Clips',
+    category: 'clips',
+    price: 300,
+    originalPrice: 400,
+    rating: 5.0,
+    reviewsCount: 22,
+    image: hairClip3,
+    // galleryImages: [hairClip1, hairClip3, hairClip4],
+    description: 'Arrangement of 5 detailed crochet lavender sprigs sitting gracefully in a hand-poured mini ceramic pot. Delicate and elegant home decor.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Pink'],
+    yarnType: '100% Milk Cotton',
+    dimensions: 'Height: 18cm',
+    leadTime: '2-3 Days',
+    details: [
+      '5 individually crafted sprigs',
+      'Includes decorative faux soil and ceramic container',
+      'Dust-resistant treated yarn'
+    ]
+  },
+  {
+
+    id: 'p16',
+    name: 'Handmade Butterfly Crochet Clips',
+    category: 'clips',
+    price: 300,
+    originalPrice: 400,
+    rating: 5.0,
+    reviewsCount: 22,
+    image: hairClip4,
+    // galleryImages: [hairClip1, hairClip3, hairClip4],
+    description: 'Arrangement of 5 detailed crochet lavender sprigs sitting gracefully in a hand-poured mini ceramic pot. Delicate and elegant home decor.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Yellow'],
+    yarnType: '100% Milk Cotton',
+    dimensions: 'Height: 18cm',
+    leadTime: '2-3 Days',
+    details: [
+      '5 individually crafted sprigs',
+      'Includes decorative faux soil and ceramic container',
+      'Dust-resistant treated yarn'
+    ]
+  },
+
+  {
+    id: 'p17',
+    name: 'Handmade Scarf Pins',
+    category: 'ScarfPins',
+    price: 350,
+    originalPrice: 450,
+    rating: 4.9,
+    reviewsCount: 18,
+    image: scarfPin1,
+    // galleryImages: [scarfPin1, scarfPin2, scarfPin3, scarfPin4],
+    description: 'Set of 3 handmade crochet scarf pins in vibrant colors. Perfect for securing scarves, shawls, and hijabs while adding a touch of elegance to your outfit.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Light Pink & Dark Brown'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Length: 5cm',
+    leadTime: '1-2 Days',
+    details: [
+      '3 unique crochet designs',
+      'Durable metal pin backing',
+      'Lightweight and easy to wear'
+    ]
+
+  },
+  {
+    id: 'p18',
+    name: 'Handmade Scarf Pins',
+    category: 'ScarfPins',
+    price: 350,
+    originalPrice: 450,
+    rating: 4.9,
+    reviewsCount: 18,
+    image: scarfPin2,
+    // galleryImages: [scarfPin1, scarfPin2, scarfPin3, scarfPin4],
+    description: 'Set of 3 handmade crochet scarf pins in vibrant colors. Perfect for securing scarves, shawls, and hijabs while adding a touch of elegance to your outfit.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Rose Red'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Length: 5cm',
+    leadTime: '1-2 Days',
+    details: [
+      '3 unique crochet designs',
+      'Durable metal pin backing',
+      'Lightweight and easy to wear'
+    ]
+
+  },
+  {
+    id: 'p19',
+    name: 'Handmade Scarf Pins',
+    category: 'ScarfPins',
+    price: 350,
+    originalPrice: 450,
+    rating: 4.9,
+    reviewsCount: 18,
+    image: scarfPin3,
+    // galleryImages: [scarfPin1, scarfPin2, scarfPin3, scarfPin4],
+    description: 'Set of 3 handmade crochet scarf pins in vibrant colors. Perfect for securing scarves, shawls, and hijabs while adding a touch of elegance to your outfit.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Yellow & Black'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Length: 5cm',
+    leadTime: '1-2 Days',
+    details: [
+      '3 unique crochet designs',
+      'Durable metal pin backing',
+      'Lightweight and easy to wear'
+    ]
+
+  },
+  {
+    id: 'p20',
+    name: 'Handmade Scarf Pins',
+    category: 'ScarfPins',
+    price: 350,
+    originalPrice: 450,
+    rating: 4.9,
+    reviewsCount: 18,
+    image: scarfPin4,
+    // galleryImages: [scarfPin1, scarfPin2, scarfPin3, scarfPin4],
+    description: 'Set of 3 handmade crochet scarf pins in vibrant colors. Perfect for securing scarves, shawls, and hijabs while adding a touch of elegance to your outfit.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Yellow & Brown'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Length: 5cm',
+    leadTime: '1-2 Days',
+    details: [
+      '3 unique crochet designs',
+      'Durable metal pin backing',
+      'Lightweight and easy to wear'
+    ]
+
+  },
+
+  {
+    id: 'p22',
+    name: 'Spiderman Crochet Keychain',
+    category: 'keychains',
+    price: 400,
+    originalPrice: 500,
+    rating: 5.0,
+    reviewsCount: 12,
+    image: spidermanKeychainImg,
+    description: 'Handmade crochet Spiderman keychain crafted with premium yarn. A perfect gift for Spiderman fans and a fun accessory for your keys or bags.',
+    isBestSeller: false,
+    inStock: true,
+    isNew: true,
+    colors: ['Black', 'White'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 7cm x 6cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+  {
+    id: 'p24',
+    name: 'Rose Bouquet Keychain',
+    category: 'keychains',
+    price: 450,
+    originalPrice: 550,
+    rating: 4.8,
+    reviewsCount: 25,
+    image: bouquetImg1,
+    // galleryImages: [bouquetImg1, bouquetImg2, bouquetImg3],
+    description: 'Beautiful handmade crochet bouquet keychain with realistic flower details. A delightful accessory for your keys or handbag.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Red'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 8cm x 7cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },{
+    id: 'p25',
+    name: 'Sunflower Bouquet Keychain',
+    category: 'keychains',
+    price: 450,
+    originalPrice: 550,
+    rating: 4.8,
+    reviewsCount: 25,
+    image: bouquetImg2,
+    // galleryImages: [bouquetImg1, bouquetImg2, bouquetImg3],
+    description: 'Beautiful handmade crochet bouquet keychain with realistic flower details. A delightful accessory for your keys or handbag.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Yellow'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 8cm x 7cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+  {
+    id: 'p26',
+    name: 'Multicolored Bouquet Keychain',
+    category: 'keychains',
+    price: 450,
+    originalPrice: 550,
+    rating: 4.8,
+    reviewsCount: 25,
+    image: bouquetImg3,
+    // galleryImages: [bouquetImg1, bouquetImg2, bouquetImg3],
+    description: 'Beautiful handmade crochet bouquet keychain with realistic flower details. A delightful accessory for your keys or handbag.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Multicolored'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 8cm x 7cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+  {
+    id: 'p27',
+    name: 'Strawberry Crochet Keychain',
+    category: 'keychains',
+    price: 350,
+    originalPrice: 450,
+    rating: 4.9,
+    reviewsCount: 20,
+    image: strawberryKeychainImg,
+    description: 'Adorable handmade crochet strawberry keychain crafted with premium yarn. A sweet accessory for your keys or bags, perfect for gifting.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Red & Green'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 6cm x 5cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+  {
+    id: 'p28',
+    name: 'Handmade Crochet Bookmark',
+    category: 'bookmarks',
+    price: 250,
+    originalPrice: 350,
+    rating: 4.7,
+    reviewsCount: 15,
+    image: bookmarkImg1,
+    description: 'Elegant handmade crochet bookmark featuring a delicate floral design. A perfect gift for book lovers and a charming accessory for your reading collection.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Red & Green & White'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Length: 20cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Lightweight and durable',
+      'Perfect for gifting and personal use'
+    ]
+  },
+  {
+    id: 'p29',
+    name: 'Cute Chicken Crochet Keychain',
+    category: 'keychains',
+    price: 350,
+    originalPrice: 450,
+    rating: 4.9,
+    reviewsCount: 18,
+    image: cuteChickenKeychainImg,
+    description: 'Adorable handmade crochet chicken keychain crafted with premium yarn. A fun and charming accessory for your keys or bags, perfect for gifting.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Yellow'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 6cm x 5cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+  {
+    id: 'p30',
+    name: 'Bag Hanging Charm Crochet',
+    category: 'BagHangingCharms',
+    price: 400,
+    originalPrice: 500,
+    rating: 4.8,
+    reviewsCount: 12,
+    image: bagHangingCharmImg,
+    description: 'Elegant handmade crochet bag hanging charm featuring a delicate floral design. A perfect accessory for your handbags, creating a charming and personalized touch.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Yellow & Green'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 8cm x 6cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal ring included',
+      'Perfect for handbags and accessories'
+    ]
+  },
+  {
+    id: 'p31',
+    name: 'Bag Hanging Charm Crochet',
+    category: 'BagHangingCharms',
+    price: 400,
+    originalPrice: 500,
+    rating: 4.8,
+    reviewsCount: 12,
+    image: bagHangingCharm2Img,
+    description: 'Elegant handmade crochet bag hanging charm featuring a delicate floral design. A perfect accessory for your handbags, creating a charming and personalized touch.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Grass Green'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 8cm x 6cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal ring included',
+      'Perfect for handbags and accessories'
+    ]
+  },
+  {
+    id: 'p32',
+    name: 'Bag Hanging Charm Crochet (wheel design)',
+    category: 'BagHangingCharms',
+    price: 400,
+    originalPrice: 500,
+    rating: 4.8,
+    reviewsCount: 12,
+    image: bagHangingCharm3Img,
+    description: 'Elegant handmade crochet bag hanging charm featuring a delicate floral design. A perfect accessory for your handbags, creating a charming and personalized touch.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Ice Blue & Green'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 8cm x 6cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal ring included',
+      'Perfect for handbags and accessories'
+    ]
+  },
+  {
+    id: 'p33',
+    name: 'Bag Hanging Charm Crochet (Pineapple design)',
+    category: 'BagHangingCharms',
+    price: 400,
+    originalPrice: 500,
+    rating: 4.8,
+    reviewsCount: 12,
+    image: bagHangingCharm4Img,
+    description: 'Elegant handmade crochet bag hanging charm featuring a delicate floral design. A perfect accessory for your handbags, creating a charming and personalized touch.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Yellow & Green'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 8cm x 6cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal ring included',
+      'Perfect for handbags and accessories'
+    ]
+  },
+  {
+    id: 'p34',
+    name: 'Bag Hanging Charm Crochet (Blue Star design)',
+    category: 'BagHangingCharms',
+    price: 400,
+    originalPrice: 500,
+    rating: 4.8,
+    reviewsCount: 12,
+    image: bagHangingCharm5Img,
+    description: 'Elegant handmade crochet bag hanging charm featuring a delicate floral design. A perfect accessory for your handbags, creating a charming and personalized touch.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Light Blue'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 8cm x 6cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal ring included',
+      'Perfect for handbags and accessories'
+    ]
+  },
+  {
+    id: 'p35',
+    name: 'Bag Hanging Charm Crochet (Magenta Star design)',
+    category: 'BagHangingCharms',
+    price: 400,
+    originalPrice: 500,
+    rating: 4.8,
+    reviewsCount: 12,
+    image: bagHangingCharm6Img,
+    description: 'Elegant handmade crochet bag hanging charm featuring a delicate floral design. A perfect accessory for your handbags, creating a charming and personalized touch.',
+    isBestSeller: false,
+    isNew: true,
+    inStock: true,
+    colors: ['Magenta / Deep Berry Pink (center and outer border)'],
+    yarnType: 'Premium Cotton Yarn',
+    dimensions: 'Approx. 8cm x 6cm',
+    leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium yarn',
+      'Durable metal ring included',
+      'Perfect for handbags and accessories'
+    ]
+  }
+
+
 ];
-
 export const REVIEWS: Review[] = [
   {
     id: 'r1',
@@ -460,13 +868,13 @@ export const FAQS: FAQItem[] = [
     id: 'faq1',
     category: 'ordering',
     question: 'How do I place an order for crochet items?',
-    answer: 'You can order directly through our website by clicking "Order on WhatsApp" on any product, or by sending a message to our WhatsApp at 03340211881 (+923340211881). We will confirm your item, custom choices, and delivery details.'
+    answer: 'You can order directly through our website by clicking "Order on WhatsApp" on any product, or by sending a message to our WhatsApp at 003272464001 (+923272464001). We will confirm your item, custom choices, and delivery details.'
   },
   {
     id: 'faq2',
     category: 'custom',
     question: 'Can I request custom colors, letters, or designs?',
-    answer: 'Yes, absolutely! Everything is 100% handmade in small batches. You can customize colors, request personalized initials, or send us reference pictures via WhatsApp (03340211881) or Instagram (@crochet_art_1014).'
+    answer: 'Yes, absolutely! Everything is 100% handmade in small batches. You can customize colors, request personalized initials, or send us reference pictures via WhatsApp (03272464001) or Instagram (@crochet_art_1014).'
   },
   {
     id: 'faq3',
