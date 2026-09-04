@@ -3,18 +3,30 @@ import { Product, Review, FAQItem } from '../types';
 import gajrayImg from '../assets/images/gajray.jpeg';
 import gajray2Img from '../assets/images/handbracellet.jpeg';
 import gajray3Img from '../assets/images/gajray3.jpeg';
+import gajray4Img from '../assets/images/gajray4.jpeg';
+import gajray5Img from '../assets/images/full_red_gajray.jpeg';
+
 // keychain images
 import keychainImg from '../assets/images/honeybee_keychain.jpeg';
 import keychain1Img from '../assets/images/octapus.jpeg';
 import keychain2Img from '../assets/images/snail_keychain.jpeg';
 import keychain3Img from '../assets/images/rose.jpeg';
 import keychain4Img from '../assets/images/icecream_keychain.jpeg';
+import keychain5Img from '../assets/images/icecream_keychain2.jpeg';
+import keychain6Img from '../assets/images/pikachu_keychain.jpeg';
+import keychain7Img from '../assets/images/dounat_keychain.jpeg';
+
 // plushie images
 import libBalmImg from '../assets/images/lip_balm_holder.jpeg';
 
 // import plushieImg from '../assets/images/crochet_plushies_bee_1785257295839.jpg';
 
-import flowersImg from '../assets/images/flowers.jpeg';
+import flowersImg1 from '../assets/images/flowers.jpeg';
+import flowersImg2 from '../assets/images/rose_flower_pot.jpeg';
+import flowersImg3 from '../assets/images/blue_flower_pot.jpeg';
+import flowersImg4 from '../assets/images/pink_flower_pot.jpeg';
+
+
 import donutImg from '../assets/images/dounat.jpeg';
 
 // hair clip images
@@ -45,7 +57,8 @@ import strawberryKeychainImg from '../assets/images/strawberry_keychain.jfif';
 import bookmarkImg1 from '../assets/images/bookmark.jfif';
 
 //cute chicken keychain image
-import cuteChickenKeychainImg from '../assets/images/cutie_chick.webp'; 
+import cuteChickenKeychainImg1 from '../assets/images/cutie_chick.webp';
+import cuteChickenKeychainImg2 from '../assets/images/chick_keychain.jpeg';
 
 // Bag hanging charm image
 import bagHangingCharmImg from '../assets/images/bag_charm1.webp';
@@ -154,7 +167,7 @@ export const PRODUCTS: Product[] = [
   },
    {
   id: 'p5',
-  name: 'Handmade Crochet Ice-Cream Keychain',
+  name: 'Handmade Crochet Ice-Cream Keychain (Pink)',
   category: 'keychains',
   price: 300,
   originalPrice: 400,
@@ -179,7 +192,7 @@ export const PRODUCTS: Product[] = [
      id: 'p6',
   name: 'Handmade Crochet Rose Flower Gajray',
   category: 'custom',
-  price: 1200,
+  price: 1500,
   originalPrice: 2000,
   rating: 4.9,
   reviewsCount: 28,
@@ -203,7 +216,7 @@ export const PRODUCTS: Product[] = [
      id: 'p7',
   name: 'Handmade Crochet Genda Flower Gajray',
   category: 'custom',
-  price: 1200,
+  price: 1000,
   originalPrice: 2000,
   rating: 4.9,
   reviewsCount: 28,
@@ -227,7 +240,7 @@ export const PRODUCTS: Product[] = [
      id: 'p9',
   name: 'Handmade Crochet Red Flower & White Flower Gajray',
   category: 'custom',
-  price: 1200,
+  price: 1000,
   originalPrice: 2000,
   rating: 4.9,
   reviewsCount: 28,
@@ -296,15 +309,15 @@ export const PRODUCTS: Product[] = [
   
   {
   id: 'p12',
-  name: 'Crochet Flower Bouquet',
+  name: 'Crochet Flower Pot Handmade Flowers',
   category: 'flowers',
   price: 1200,
   originalPrice: 1500,
   rating: 4.9,
   reviewsCount: 15,
-  image: flowersImg,
-  galleryImages: [flowersImg],
-  description: 'Beautiful handmade crochet flower bouquet that stays fresh forever. Carefully crafted using premium cotton yarn, making it a perfect gift for birthdays, anniversaries, graduations, and special occasions.',
+  image: flowersImg1,
+  // galleryImages: [flowersImg2],
+  description: 'Beautiful handmade crochet flower pot with handmade flowers that stays fresh forever. Carefully crafted using premium cotton yarn, making it a perfect gift for birthdays, anniversaries, graduations, and special occasions.',
   isBestSeller: false,
   isNew: true,
   inStock: true,
@@ -668,7 +681,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 450,
     rating: 4.9,
     reviewsCount: 18,
-    image: cuteChickenKeychainImg,
+    image: cuteChickenKeychainImg1,
     description: 'Adorable handmade crochet chicken keychain crafted with premium yarn. A fun and charming accessory for your keys or bags, perfect for gifting.',
     isBestSeller: false,
     isNew: true,
@@ -820,7 +833,206 @@ export const PRODUCTS: Product[] = [
       'Durable metal ring included',
       'Perfect for handbags and accessories'
     ]
+  },
+  {
+  id: 'p36',
+  name: 'Handmade Crochet Ice-Cream Keychain (White)',
+  category: 'keychains',
+  price: 400,
+  originalPrice: 500,
+  rating: 5.0,
+  reviewsCount: 34,
+  image: keychain5Img,
+  description: 'Cute handmade crochet ice-cream keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
+  isBestSeller: true,
+  inStock: true,
+  colors: ['Soft light pink & Warm golden brown'],
+  yarnType: '100% Premium Milk Cotton Yarn',
+  dimensions: 'Approx. 7cm x 6cm',
+  leadTime: '1-2 Days',
+    details: [
+      '100% handmade with premium milk cotton yarn',
+      'Strong metal key ring included',
+      'Perfect for keys, handbags, and gifts'
+    ]
+  },
+  {
+    id: 'p37',
+    name: 'Handmade Crochet PikaChu Keychain',
+    category: 'keychains',
+    price: 400,
+    originalPrice: 500,
+    rating: 5.0,
+    reviewsCount: 34,
+    image: keychain6Img,
+    description: 'Cute handmade crochet PikaChu keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
+    isBestSeller: true,
+    inStock: true,
+    colors: ['Soft Yellow'],
+    yarnType: '100% Premium Milk Cotton Yarn',
+    dimensions: 'Approx. 7cm x 6cm',
+    leadTime: '1-2 Days',
+      details: [
+        '100% handmade with premium milk cotton yarn',
+        'Strong metal key ring included',
+        'Perfect for keys, handbags, and gifts'
+      ]
+  },
+  {
+    id: 'p38',
+    name: 'Handmade Crochet Cute Chicken Crochet Keychain',
+    category: 'keychains',
+    price: 400,
+    originalPrice: 500,
+    rating: 5.0,
+    reviewsCount: 34,
+    image: cuteChickenKeychainImg2,
+    description: 'Cute handmade crochet Cute Chicken keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
+    isBestSeller: true,
+    inStock: true,
+    colors: ['Soft Yellow'],
+    yarnType: '100% Premium Milk Cotton Yarn',
+    dimensions: 'Approx. 7cm x 6cm',
+    leadTime: '1-2 Days',
+      details: [
+        '100% handmade with premium milk cotton yarn',
+        'Strong metal key ring included',
+        'Perfect for keys, handbags, and gifts'
+      ]
+  },
+  {
+    id: 'p39',
+    name: 'Handmade Crochet Cute Donut Crochet Keychain',
+    category: 'keychains',
+    price: 450,
+    originalPrice: 500,
+    rating: 5.0,
+    reviewsCount: 34,
+    image: keychain7Img,
+    description: 'Cute handmade crochet Cute Donut keychain crafted with premium milk cotton yarn. Lightweight, durable, and perfect for decorating your keys, bags, or gifting to someone special.',
+    isBestSeller: true,
+    inStock: true,
+    colors: ['Soft Peach'],
+    yarnType: '100% Premium Milk Cotton Yarn',
+    dimensions: 'Approx. 7cm x 6cm',
+    leadTime: '1-2 Days',
+      details: [
+        '100% handmade with premium milk cotton yarn',
+        'Strong metal key ring included',
+        'Perfect for keys, handbags, and gifts'
+      ]
+  },{
+    id: 'p40',
+    name: 'Red Rose Crochet Flower Pot Handmade Flowers',
+    category: 'flowers',
+    price: 700,
+    originalPrice: 1000,
+    rating: 5.0,
+    reviewsCount: 34,
+    image: flowersImg2,
+    description: 'Beautiful handmade crochet flower pot with handmade roses that stays fresh forever. Carefully crafted using premium cotton yarn, making it a perfect gift for birthdays, anniversaries, graduations, and special occasions.',
+    isBestSeller: true,
+    inStock: true,
+    colors: ['Soft Red'],
+    yarnType: '100% Premium Milk Cotton Yarn',
+    dimensions: 'Approx. 7cm x 6cm',
+    leadTime: '1-2 Days',
+      details: [
+        '100% handmade with premium milk cotton yarn',
+        'Strong metal key ring included',
+        'Perfect for keys, handbags, and gifts'
+      ]
+  },{
+    id: 'p41',
+    name: 'Blue Daisy Crochet Flower Pot Handmade Flowers',
+    category: 'flowers',
+    price: 700,
+    originalPrice: 1000,
+    rating: 5.0,
+    reviewsCount: 34,
+    image: flowersImg3,
+    description: 'Beautiful handmade crochet flower pot with handmade blue daisies that stays fresh forever. Carefully crafted using premium cotton yarn, making it a perfect gift for birthdays, anniversaries, graduations, and special occasions.',
+    isBestSeller: true,
+    inStock: true,
+    colors: ['Soft Blue'],
+    yarnType: '100% Premium Milk Cotton Yarn',
+    dimensions: 'Approx. 7cm x 6cm',
+    leadTime: '1-2 Days',
+      details: [
+        '100% handmade with premium milk cotton yarn',
+        'Strong metal key ring included',
+        'Perfect for keys, handbags, and gifts'
+      ]
+  },{
+    id: 'p42',
+    name: 'Pink Rose Crochet Flower Pot Handmade Flowers',
+    category: 'flowers',
+    price: 700,
+    originalPrice: 1000,
+    rating: 5.0,
+    reviewsCount: 34,
+    image: flowersImg4,
+    description: 'Beautiful handmade crochet flower pot with handmade pink roses that stays fresh forever. Carefully crafted using premium cotton yarn, making it a perfect gift for birthdays, anniversaries, graduations, and special occasions.',
+    isBestSeller: true,
+    inStock: true,
+    colors: ['Soft Pink'],
+    yarnType: '100% Premium Milk Cotton Yarn',
+    dimensions: 'Approx. 7cm x 6cm',
+    leadTime: '1-2 Days',
+      details: [
+        '100% handmade with premium milk cotton yarn',
+        'Strong metal key ring included',
+        'Perfect for keys, handbags, and gifts'
+      ]
+  },{
+    id: 'p43',
+    name: 'Handmade Crochet Pink Rose Flower Gajray',
+  category: 'custom',
+  price: 1000,
+  originalPrice: 2000,
+  rating: 4.9,
+  reviewsCount: 28,
+  image: gajray4Img,
+  // galleryImages: [gajrayImg, gajray3Img, gajray2Img],
+  description: 'Elegant handmade crochet rose flower gajray designed to add a timeless floral touch to your hairstyle. Soft, lightweight, reusable, and perfect for weddings, Eid, mehndi, and special occasions.',
+  isBestSeller: true,
+  isNew: true,
+  inStock: true,
+  colors: ['Pink & White'],
+  yarnType: 'Premium Soft Cotton Yarn',
+  dimensions: 'Standard Size',
+  leadTime: '1 Day',
+    details: [
+      'Handmade crochet rose flowers',
+      'Reusable and long-lasting',
+      'Comfortable to wear for all occasions'
+    ]
+  },
+  {
+    id: 'p44',
+    name: 'Handmade Crochet White Rose Flower Gajray',
+  category: 'custom',
+  price: 1200,
+  originalPrice: 2000,
+  rating: 4.9,
+  reviewsCount: 28,
+  image: gajray5Img,
+  // galleryImages: [gajrayImg, gajray3Img, gajray2Img],
+  description: 'Elegant handmade crochet white rose flower gajray designed to add a timeless floral touch to your hairstyle. Soft, lightweight, reusable, and perfect for weddings, Eid, mehndi, and special occasions.',
+  isBestSeller: true,
+  isNew: true,
+  inStock: true,
+  colors: ['White & Green'],
+  yarnType: 'Premium Soft Cotton Yarn',
+  dimensions: 'Standard Size',
+  leadTime: '1 Day',
+    details: [
+      'Handmade crochet white rose flowers',
+      'Reusable and long-lasting',
+      'Comfortable to wear for all occasions'
+    ]
   }
+  
 
 
 ];
@@ -868,13 +1080,13 @@ export const FAQS: FAQItem[] = [
     id: 'faq1',
     category: 'ordering',
     question: 'How do I place an order for crochet items?',
-    answer: 'You can order directly through our website by clicking "Order on WhatsApp" on any product, or by sending a message to our WhatsApp at 003272464001 (+923272464001). We will confirm your item, custom choices, and delivery details.'
+    answer: 'You can order directly through our website by clicking "Order on WhatsApp" on any product, or by sending a message to our WhatsApp at 03340211881 (+923340211881). We will confirm your item, custom choices, and delivery details.'
   },
   {
     id: 'faq2',
     category: 'custom',
     question: 'Can I request custom colors, letters, or designs?',
-    answer: 'Yes, absolutely! Everything is 100% handmade in small batches. You can customize colors, request personalized initials, or send us reference pictures via WhatsApp (03272464001) or Instagram (@crochet_art_1014).'
+    answer: 'Yes, absolutely! Everything is 100% handmade in small batches. You can customize colors, request personalized initials, or send us reference pictures via WhatsApp (03340211881) or Instagram (@crochet_art_1014).'
   },
   {
     id: 'faq3',
@@ -915,7 +1127,7 @@ export const INSTAGRAM_POSTS = [
   },
   {
     id: 'ig3',
-    image: flowersImg,
+    image: flowersImg1,
     caption: 'Pastel butterfly hair clips fluttering into your accessories collection! 🦋 Which color combination is your favorite?',
     likes: 310,
     comments: 45,
@@ -932,5 +1144,5 @@ export const INSTAGRAM_POSTS = [
 ];
 
 export const INSTAGRAM_URL = "https://www.instagram.com/crochet_art_1014?igsh=dngyaG5qOTl0M2Vs";
-export const WHATSAPP_NUMBER = "923272464001";
-export const WHATSAPP_DISPLAY = "03272464001";
+export const WHATSAPP_NUMBER = "923340211881";
+export const WHATSAPP_DISPLAY = "03340211881";
