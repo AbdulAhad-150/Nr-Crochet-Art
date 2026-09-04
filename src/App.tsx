@@ -296,7 +296,7 @@ export default function App() {
       <button
         key={cat.id}
         onClick={() => setSelectedCategory(cat.id as Category)}
-        className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition shrink-0 flex items-center gap-1.5 ${
+        className={`px-1 py-2 rounded-full text-xs sm:text-sm font-semibold transition shrink-0 flex items-center gap-1.5 ${
           selectedCategory === cat.id
             ? 'bg-rose-500 text-white shadow-md'
             : 'bg-white text-stone-700 border border-stone-200 hover:border-rose-300'
